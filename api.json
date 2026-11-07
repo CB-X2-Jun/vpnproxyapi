@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-07T12:00:00Z",
+  "nodes": [
+    {
+      "id": "tr-http-01",
+      "country": "TR",
+      "country_name": "土耳其",
+      "flag_class": "flag-country-tr",
+      "proto": "http",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "http",
+        "tag": "tr-http-01",
+        "server": "201.4.68.113",
+        "server_port": 8080
+      }
+    },
+    {
+      "id": "cn-https-01",
+      "country": "CN",
+      "country_name": "中国",
+      "flag_class": "flag-country-cn",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "cn-https-01",
+        "server": "14.29.168.215",
+        "server_port": 10443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "lt-vless-01",
+      "country": "LT",
+      "country_name": "立陶宛",
+      "flag_class": "flag-country-lt",
+      "proto": "vless",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "ca-verified",
+      "outbound": {
+        "type": "vless",
+        "tag": "lt-vless-01",
+        "server": "185.34.52.147",
+        "server_port": 443,
+        "uuid": "7f3c2d1a-8b4e-4f9a-9c2d-1e3f5a7b8c9d",
+        "tls": {
+          "enabled": true,
+          "server_name": "s5c.cc.cd",
+          "utls": {
+            "enabled": true,
+            "fingerprint": "random"
+          }
+        },
+        "transport": {
+          "type": "ws",
+          "path": "/?ed=2048&proxyip=185.34.52.147:443",
+          "headers": {
+            "Host": "s5c.cc.cd"
+          }
+        }
+      }
+    },
+    {
+      "id": "tr-https-02",
+      "country": "TR",
+      "country_name": "土耳其",
+      "flag_class": "flag-country-tr",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "tr-https-02",
+        "server": "5.178.98.214",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "hk-https-01",
+      "country": "HK",
+      "country_name": "香港",
+      "flag_class": "flag-country-hk",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "hk-https-01",
+        "server": "120.232.204.58",
+        "server_port": 31343,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "il-https-01",
+      "country": "IL",
+      "country_name": "以色列",
+      "flag_class": "flag-country-il",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "il-https-01",
+        "server": "62.90.77.30",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    }
+  ]
+}
