@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-08T12:00:00Z",
+  "updated_at": "2026-11-08T15:00:00Z",
   "nodes": [
     {
       "id": "tr-http-01",
@@ -71,17 +71,17 @@
       }
     },
     {
-      "id": "tr-https-02",
-      "country": "TR",
-      "country_name": "土耳其",
-      "flag_class": "flag-country-tr",
+      "id": "in-https-01",
+      "country": "IN",
+      "country_name": "印度",
+      "flag_class": "flag-country-in",
       "proto": "https",
       "type": "datacenter",
       "source": "public-pool",
       "trust": "insecure-tls",
       "outbound": {
         "type": "http",
-        "tag": "tr-https-02",
+        "tag": "in-https-01",
         "server": "5.178.98.214",
         "server_port": 443,
         "tls": {
@@ -326,6 +326,339 @@
         "tls": {
           "enabled": true,
           "insecure": true
+        }
+      }
+    },
+    {
+      "id": "uz-http-01",
+      "country": "UZ",
+      "country_name": "乌兹别克斯坦",
+      "flag_class": "flag-country-uz",
+      "proto": "http",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "http",
+        "tag": "uz-http-01",
+        "server": "195.158.8.123",
+        "server_port": 3128
+      }
+    },
+    {
+      "id": "lt-https-02",
+      "country": "LT",
+      "country_name": "立陶宛",
+      "flag_class": "flag-country-lt",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "ca-verified",
+      "outbound": {
+        "type": "http",
+        "tag": "lt-https-02",
+        "server": "93.115.26.111",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "certificate_public_key_sha256": [
+            "2c6f4c2c92e4eb7831e029b86413003ed08022e547075610c594d33cc3246004"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cw-https-01",
+      "country": "CW",
+      "country_name": "库拉索",
+      "flag_class": "flag-country-cw",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "cw-https-01",
+        "server": "190.112.224.179",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "us-socks-01",
+      "country": "US",
+      "country_name": "美国",
+      "flag_class": "flag-country-us",
+      "proto": "socks5",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "socks",
+        "tag": "us-socks-01",
+        "server": "193.25.215.182",
+        "server_port": 22222,
+        "version": "5"
+      }
+    },
+    {
+      "id": "ee-https-01",
+      "country": "EE",
+      "country_name": "爱沙尼亚",
+      "flag_class": "flag-country-ee",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "ee-https-01",
+        "server": "95.153.32.2",
+        "server_port": 9443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "vn-https-01",
+      "country": "VN",
+      "country_name": "越南",
+      "flag_class": "flag-country-vn",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "vn-https-01",
+        "server": "14.225.71.128",
+        "server_port": 8443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "sk-https-01",
+      "country": "SK",
+      "country_name": "斯洛伐克",
+      "flag_class": "flag-country-sk",
+      "proto": "https",
+      "type": "mobile",
+      "source": "public-pool",
+      "trust": "ca-verified",
+      "outbound": {
+        "type": "http",
+        "tag": "sk-https-01",
+        "server": "plagoff.sk",
+        "server_port": 443,
+        "tls": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "ru-https-01",
+      "country": "RU",
+      "country_name": "俄罗斯",
+      "flag_class": "flag-country-ru",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "ru-https-01",
+        "server": "91.146.45.78",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "in-socks-02",
+      "country": "IN",
+      "country_name": "印度",
+      "flag_class": "flag-country-in",
+      "proto": "socks5",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "socks",
+        "tag": "in-socks-02",
+        "server": "82.180.146.251",
+        "server_port": 10800,
+        "version": "5"
+      }
+    },
+    {
+      "id": "uy-https-01",
+      "country": "UY",
+      "country_name": "乌拉圭",
+      "flag_class": "flag-country-uy",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "uy-https-01",
+        "server": "201.217.148.180",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "dk-https-01",
+      "country": "DK",
+      "country_name": "丹麦",
+      "flag_class": "flag-country-dk",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "dk-https-01",
+        "server": "87.238.253.66",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "my-https-01",
+      "country": "MY",
+      "country_name": "马来西亚",
+      "flag_class": "flag-country-my",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "my-https-01",
+        "server": "210.19.96.163",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "cy-https-01",
+      "country": "CY",
+      "country_name": "塞浦路斯",
+      "flag_class": "flag-country-cy",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "cy-https-01",
+        "server": "213.207.132.2",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "cy-https-02",
+      "country": "CY",
+      "country_name": "塞浦路斯",
+      "flag_class": "flag-country-cy",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "cy-https-02",
+        "server": "46.199.75.105",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "us-https-02",
+      "country": "US",
+      "country_name": "美国",
+      "flag_class": "flag-country-us",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "us-https-02",
+        "server": "138.197.69.103",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "lu-https-01",
+      "country": "LU",
+      "country_name": "卢森堡",
+      "flag_class": "flag-country-lu",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "lu-https-01",
+        "server": "188.42.46.2",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "kr-https-01",
+      "country": "KR",
+      "country_name": "韩国",
+      "flag_class": "flag-country-kr",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "ca-verified",
+      "outbound": {
+        "type": "http",
+        "tag": "kr-https-01",
+        "server": "152.69.230.221",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "certificate_public_key_sha256": [
+            "e48ca71c782c3b83bdc3366763481d1e83abd7458b6a9e068d156609c1f3ea03"
+          ]
         }
       }
     }
