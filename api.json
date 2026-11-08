@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-07T12:00:00Z",
+  "updated_at": "2026-11-08T12:00:00Z",
   "nodes": [
     {
       "id": "tr-http-01",
@@ -24,7 +24,7 @@
       "country_name": "中国",
       "flag_class": "flag-country-cn",
       "proto": "https",
-      "type": "datacenter",
+      "type": "residential",
       "source": "public-pool",
       "trust": "insecure-tls",
       "outbound": {
@@ -123,6 +123,205 @@
         "type": "http",
         "tag": "il-https-01",
         "server": "62.90.77.30",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "nl-socks-01",
+      "country": "NL",
+      "country_name": "荷兰",
+      "flag_class": "flag-country-nl",
+      "proto": "socks5",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "socks",
+        "tag": "nl-socks-01",
+        "server": "5.255.123.162",
+        "server_port": 1080,
+        "version": "5"
+      }
+    },
+    {
+      "id": "nl-socks-02",
+      "country": "NL",
+      "country_name": "荷兰",
+      "flag_class": "flag-country-nl",
+      "proto": "socks5",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "socks",
+        "tag": "nl-socks-02",
+        "server": "5.255.117.127",
+        "server_port": 1080,
+        "version": "5"
+      }
+    },
+    {
+      "id": "se-https-01",
+      "country": "SE",
+      "country_name": "瑞典",
+      "flag_class": "flag-country-se",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "se-https-01",
+        "server": "217.210.129.243",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "eg-https-01",
+      "country": "EG",
+      "country_name": "埃及",
+      "flag_class": "flag-country-eg",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "eg-https-01",
+        "server": "102.217.69.75",
+        "server_port": 10443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "is-vless-01",
+      "country": "IS",
+      "country_name": "冰岛",
+      "flag_class": "flag-country-is",
+      "proto": "vless",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "ca-verified",
+      "outbound": {
+        "type": "vless",
+        "tag": "is-vless-01",
+        "server": "82.221.114.229",
+        "server_port": 443,
+        "uuid": "7f3c2d1a-8b4e-4f9a-9c2d-1e3f5a7b8c9d",
+        "tls": {
+          "enabled": true,
+          "server_name": "s5c.cc.cd",
+          "utls": {
+            "enabled": true,
+            "fingerprint": "random"
+          }
+        },
+        "transport": {
+          "type": "ws",
+          "path": "/?ed=2048&proxyip=82.221.114.229:443",
+          "headers": {
+            "Host": "s5c.cc.cd"
+          }
+        }
+      }
+    },
+    {
+      "id": "md-https-01",
+      "country": "MD",
+      "country_name": "摩尔多瓦",
+      "flag_class": "flag-country-md",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "md-https-01",
+        "server": "178.175.134.186",
+        "server_port": 443,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "kh-socks-01",
+      "country": "KH",
+      "country_name": "柬埔寨",
+      "flag_class": "flag-country-kh",
+      "proto": "socks5",
+      "type": "mobile",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "socks",
+        "tag": "kh-socks-01",
+        "server": "220.158.232.118",
+        "server_port": 1080,
+        "version": "5"
+      }
+    },
+    {
+      "id": "cn-https-02",
+      "country": "CN",
+      "country_name": "中国",
+      "flag_class": "flag-country-cn",
+      "proto": "https",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "cn-https-02",
+        "server": "180.166.128.182",
+        "server_port": 12011,
+        "tls": {
+          "enabled": true,
+          "insecure": true
+        }
+      }
+    },
+    {
+      "id": "co-http-01",
+      "country": "CO",
+      "country_name": "哥伦比亚",
+      "flag_class": "flag-country-co",
+      "proto": "http",
+      "type": "residential",
+      "source": "public-pool",
+      "trust": "plaintext",
+      "outbound": {
+        "type": "http",
+        "tag": "co-http-01",
+        "server": "190.0.246.210",
+        "server_port": 4040
+      }
+    },
+    {
+      "id": "om-https-01",
+      "country": "OM",
+      "country_name": "阿曼",
+      "flag_class": "flag-country-om",
+      "proto": "https",
+      "type": "datacenter",
+      "source": "public-pool",
+      "trust": "insecure-tls",
+      "outbound": {
+        "type": "http",
+        "tag": "om-https-01",
+        "server": "79.72.36.217",
         "server_port": 443,
         "tls": {
           "enabled": true,
